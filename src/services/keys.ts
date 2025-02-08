@@ -13,3 +13,5 @@ export const sessionsKey = (sessionId: string) => {
 export const itemsKey = (itemId: string) => {
 	return `items#${itemId}`;
 };
+
+export const usernamesUniqueKey = () => 'usernames:unique';
