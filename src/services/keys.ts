@@ -10,13 +10,18 @@ export const sessionsKey = (sessionId: string) => {
 	return `sessions#${sessionId}`;
 };
 
-export const itemsKey = (itemId: string) => {
-	return `items#${itemId}`;
-};
-
 export const usernamesUniqueKey = () => 'usernames:unique';
 
 export const userLikesKey = (userId: string) => `users:likes#${userId}`;
 
 export const usernamesKey = () => 'usernames';
 
+// items
+
+export const itemsKey = (itemId: string) => {
+	return `items#${itemId}`;
+};
+
+export const itemsByViewsKey = () => `items:views`;
+
+export const itemsByEndingAtKey = () => `items:endingAt`;
